@@ -59,6 +59,7 @@ public class ListMain extends ListActivity {
 			Intent sqlIntent = new Intent(this, ListSQL.class);
 			
 			startActivity(sqlIntent);
+			finish();
 			return false;
 		}
 	}
