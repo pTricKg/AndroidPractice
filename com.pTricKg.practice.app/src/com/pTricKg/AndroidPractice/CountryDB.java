@@ -1,4 +1,4 @@
-package com.ptrickg.practice.app;
+package com.pTricKg.AndroidPractice;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

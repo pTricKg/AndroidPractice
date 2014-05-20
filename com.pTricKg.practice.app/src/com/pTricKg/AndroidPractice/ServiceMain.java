@@ -1,4 +1,5 @@
-package com.ptrickg.practice.app;
+package com.pTricKg.AndroidPractice;
+
 
 
 

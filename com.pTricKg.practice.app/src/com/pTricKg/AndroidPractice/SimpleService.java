@@ -1,4 +1,4 @@
-package com.ptrickg.practice.app;
+package com.pTricKg.AndroidPractice;
 
 import java.util.Timer;
 import java.util.TimerTask;

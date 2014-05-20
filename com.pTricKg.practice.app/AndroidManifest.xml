@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ptrickg.practice.app"
+    package="com.pTricKg.AndroidPractice"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.ptrickg.practice.app.ListMain"
+            android:name="com.pTricKg.AndroidPractice.ListMain"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ptrickg.practice.app.ListSQL"
+            android:name="com.pTricKg.AndroidPractice.ListSQL"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -31,15 +31,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ptrickg.practice.app.ServiceMain"
+            android:name="com.pTricKg.AndroidPractice.ServiceMain"
             android:label="@string/title_activity_service_main" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
                 </action>
             </intent-filter>
         </activity>
-        <service 
-            android:name="com.ptrickg.practice.app.SimpleService">
+
+        <service android:name="com.pTricKg.AndroidPractice.SimpleService" >
         </service>
     </application>
 

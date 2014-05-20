@@ -1,8 +1,10 @@
-package com.ptrickg.practice.app;
+package com.pTricKg.AndroidPractice;
 
-import android.os.Bundle;
+
+
 import android.app.ListActivity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
