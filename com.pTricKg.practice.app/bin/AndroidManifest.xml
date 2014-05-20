@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <service 
-            android:name=".SimpleService">
+            android:name="com.ptrickg.practice.app.SimpleService">
         </service>
     </application>
 

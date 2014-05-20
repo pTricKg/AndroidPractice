@@ -8,9 +8,10 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:hint="@string/editText"
+        android:inputType="text" />
 
-    <Button
+   <Button
         android:id="@+id/btnStartService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +31,9 @@
         android:layout_marginLeft="44dp"
         android:layout_toRightOf="@+id/btnStartService"
         android:onClick="btnClicked"
-        android:text="@string/btnStop_text" />
+        android:text="@string/btnStop_text" /> 
+
+
+
 
 </RelativeLayout>
