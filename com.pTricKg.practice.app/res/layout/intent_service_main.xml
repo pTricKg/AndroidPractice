@@ -2,38 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceMain" >
+    tools:context=".IntentServiceMain" >
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editSleep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/editText"
+        android:hint="@string/editSleep"
         android:inputType="text" />
 
-   <Button
-        android:id="@+id/btnStartService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="61dp"
-        android:layout_marginTop="64dp"
-        android:onClick="startService"
-        android:text="@string/btnStart_text" />
-
     <Button
-        android:id="@+id/btnStopService"
+        android:id="@+id/startSleep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnStartService"
-        android:layout_alignBottom="@+id/btnStartService"
-        android:layout_marginLeft="44dp"
-        android:layout_toRightOf="@+id/btnStartService"
-        android:onClick="stopService"
-        android:text="@string/btnStop_text" /> 
-
-
-
+        android:layout_below="@+id/editSleep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="startService"
+        android:text="@string/editsleep" />
 
 </RelativeLayout>
