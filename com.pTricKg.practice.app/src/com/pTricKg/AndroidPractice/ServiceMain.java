@@ -7,6 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,26 +65,31 @@ public class ServiceMain extends Activity {
 		
 	}
 
-	// @Override
-	// public boolean onCreateOptionsMenu(Menu menu) {
-	//
-	// // Inflate the menu; this adds items to the action bar if it is present.
-	// getMenuInflater().inflate(R.menu.service_main, menu);
-	// return true;
-	// }
-	//
-	// @Override
-	// public boolean onOptionsItemSelected(MenuItem item) {
-	// // Handle action bar item clicks here. The action bar will
-	// // automatically handle clicks on the Home/Up button, so long
-	// // as you specify a parent activity in AndroidManifest.xml.
-	// int id = item.getItemId();
-	// if (id == R.id.action_settings) {
-	// return true;
-	// }
-	// return super.onOptionsItemSelected(item);
-	// }
-	//
-	// }
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		super.onCreateOptionsMenu(menu);
+		getMenuInflater().inflate(R.menu.menuthree, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Set-up intent
+		Intent mainIntent = new Intent(this, ListMain.class);
+		Intent sqlIntent = new Intent(this, ListSQL.class);
+		
+		switch (item.getItemId()) {
+		case R.id.list:
+			startActivity(mainIntent);
+			return true;
+		case R.id.list2:
+			startActivity(sqlIntent);
+			finish();
+			return true;
+
+		}
+		return false;
+
+	}
 
 }
