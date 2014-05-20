@@ -19,7 +19,7 @@ public class IntentServiceMain extends Activity {
 	
 	public void  startService (View v) {
 		// find EditText
-		EditText sleepTime = (EditText) findViewById(R.layout.intent_service_main);
+		EditText sleepTime = (EditText) findViewById(R.id.editSleep);
 		// Get sleep time from edit text then make string then parse into long
 		long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
 		// Create Intent
