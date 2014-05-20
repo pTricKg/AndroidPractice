@@ -77,13 +77,17 @@ public class ServiceMain extends Activity {
 		// Set-up intent
 		Intent mainIntent = new Intent(this, ListMain.class);
 		Intent sqlIntent = new Intent(this, ListSQL.class);
+		Intent sleep = new Intent(this, IntentServiceMain.class);
 		
 		switch (item.getItemId()) {
 		case R.id.list:
 			startActivity(mainIntent);
 			return true;
-		case R.id.list2:
+		case R.id.sql:
 			startActivity(sqlIntent);
+			return true;
+		case R.id.list3:
+			startActivity(sleep);
 			return true;
 
 		}
