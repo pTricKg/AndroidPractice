@@ -5,12 +5,35 @@
     tools:context=".ServiceMain" >
 
     <EditText
-        android:id="@+id/editSleep"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/editSleep"
+        android:hint="@string/editText"
         android:inputType="text" />
 
-   
+   <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="64dp"
+        android:onClick="startService"
+        android:text="@string/btnStart_text" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStartService"
+        android:layout_alignBottom="@+id/btnStartService"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/btnStartService"
+        android:onClick="stopService"
+        android:text="@string/btnStop_text" /> 
+
+
+
 
 </RelativeLayout>
