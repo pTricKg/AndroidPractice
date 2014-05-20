@@ -84,7 +84,6 @@ public class ServiceMain extends Activity {
 			return true;
 		case R.id.list2:
 			startActivity(sqlIntent);
-			finish();
 			return true;
 
 		}

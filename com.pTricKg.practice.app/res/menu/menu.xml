@@ -4,4 +4,8 @@
           android:title="@string/sql" >
         
     </item>
+    <item android:id="@+id/list2"
+          android:title="@string/list2" >
+        
+    </item>
 </menu>

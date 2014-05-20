@@ -75,7 +75,6 @@ public class ListSQL extends Activity {
 			return true;
 		case R.id.list2:
 			startActivity(serviceIntent);
-			finish();
 			return true;
 
 		}

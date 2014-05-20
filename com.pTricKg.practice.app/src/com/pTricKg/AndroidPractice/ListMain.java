@@ -59,10 +59,18 @@ public class ListMain extends ListActivity {
 		public boolean onOptionsItemSelected(MenuItem item) {
 			// Set-up intent to open SQL activity
 			Intent sqlIntent = new Intent(this, ListSQL.class);
+			Intent serviceIntent = new Intent(this, ServiceMain.class);
 			
-			startActivity(sqlIntent);
-			//finish();
+			switch (item.getItemId()) {
+			case R.id.sql:
+				startActivity(sqlIntent);
+				return true;
+			case R.id.list2:
+				startActivity(serviceIntent);
+				return true;
+
+			}
 			return false;
-		}
+			}
 	}
 
