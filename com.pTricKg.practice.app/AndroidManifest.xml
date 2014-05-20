@@ -32,7 +32,15 @@
         </activity>
         <activity
             android:name="com.pTricKg.AndroidPractice.ServiceMain"
-            android:label="@string/title_activity_service_main" >
+            android:label="@string/service_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pTricKg.AndroidPractice.IntentServiceMain"
+            android:label="@string/intent_service" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
                 </action>

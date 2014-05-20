@@ -14,7 +14,8 @@
     <string name="btnStart_text">Start</string>
     <string name="btnStop_text">Stop</string>
     <string name="notification">Notification</string>
-    <string name="title_activity_service_main">Service Main</string>
+    <string name="service_main">Service Main</string>
+    <string name="intent_service">Intent Service</string>
     <string name="menuList">List</string>
     <string name="menuService">Service</string>
     <string name="editText">Enter some integers separated by space</string>
