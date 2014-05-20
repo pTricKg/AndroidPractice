@@ -18,5 +18,6 @@
     <string name="menuService">Service</string>
     <string name="editText">Enter some integers separated by space</string>
     <string name="editNumbers">Enter some integers separated by space</string>
+    <string name="editSleep">Time to sleep service in seconds</string>
 
 </resources>
