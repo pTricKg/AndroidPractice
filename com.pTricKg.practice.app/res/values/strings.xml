@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">com.pTricKg.practice.app</string>
+    <string name="app_name">Android Practice App</string>
     <string name="menu_settings">Settings</string>
     <string name="popLabel">Population:</string>
     <string name="areaLabel">Area:</string>
@@ -9,5 +9,14 @@
     <string name="areaDescriptor">sq. miles</string>
     <string name="sql">Get List using SQL</string>
     <string name="list">Go to list using array</string>
+    <string name="list2">Go to Service</string>
+    <string name="btnStart_text">Start</string>
+    <string name="btnStop_text">Stop</string>
+    <string name="notification">Notification</string>
+    <string name="title_activity_service_main">Service Main</string>
+    <string name="menuList">List</string>
+    <string name="menuService">Service</string>
+    <string name="editText">Enter some integers separated by space</string>
+    
 
 </resources>

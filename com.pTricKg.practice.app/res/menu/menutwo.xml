@@ -4,5 +4,9 @@
           android:title="@string/list" >
         
     </item>
+    <item android:id="@+id/list2"
+          android:title="@string/list2" >
+        
+    </item>
 
 </menu>

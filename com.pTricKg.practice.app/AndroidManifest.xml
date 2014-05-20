@@ -30,6 +30,17 @@
                 </action>
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.ptrickg.practice.app.ServiceMain"
+            android:label="@string/title_activity_service_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+            </intent-filter>
+        </activity>
+        <service 
+            android:name=".SimpleService">
+        </service>
     </application>
 
 </manifest>
