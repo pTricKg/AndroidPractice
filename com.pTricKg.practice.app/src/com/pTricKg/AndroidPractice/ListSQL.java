@@ -68,13 +68,17 @@ public class ListSQL extends Activity {
 		// Set-up intent
 		Intent mainIntent = new Intent(this, ListMain.class);
 		Intent serviceIntent = new Intent(this, ServiceMain.class);
+		Intent intentService = new Intent(this, IntentServiceMain.class);
 		
 		switch (item.getItemId()) {
-		case R.id.list:
+		case R.id.listarray:
 			startActivity(mainIntent);
 			return true;
-		case R.id.list2:
+		case R.id.service:
 			startActivity(serviceIntent);
+			return true;
+		case R.id.intentservice:
+			startActivity(intentService);
 			return true;
 
 		}

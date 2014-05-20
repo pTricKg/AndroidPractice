@@ -60,13 +60,17 @@ public class ListMain extends ListActivity {
 			// Set-up intent to open SQL activity
 			Intent sqlIntent = new Intent(this, ListSQL.class);
 			Intent serviceIntent = new Intent(this, ServiceMain.class);
+			Intent intentService = new Intent(this, IntentServiceMain.class);
 			
 			switch (item.getItemId()) {
 			case R.id.sql:
 				startActivity(sqlIntent);
 				return true;
-			case R.id.list2:
+			case R.id.service:
 				startActivity(serviceIntent);
+				return true;
+			case R.id.intentservice:
+				startActivity(intentService);
 				return true;
 
 			}

@@ -80,13 +80,13 @@ public class ServiceMain extends Activity {
 		Intent sleep = new Intent(this, IntentServiceMain.class);
 		
 		switch (item.getItemId()) {
-		case R.id.list:
+		case R.id.listarray:
 			startActivity(mainIntent);
 			return true;
 		case R.id.sql:
 			startActivity(sqlIntent);
 			return true;
-		case R.id.list3:
+		case R.id.intentservice:
 			startActivity(sleep);
 			return true;
 

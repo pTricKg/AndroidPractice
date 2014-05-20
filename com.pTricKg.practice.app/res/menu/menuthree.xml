@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/list"
-          android:title="@string/list" >
-        
+
+    <item
+        android:id="@+id/listarray"
+        android:title="@string/listarray">
     </item>
-    <item android:id="@+id/list2"
-          android:title="@string/sql" >
-        
+    <item
+        android:id="@+id/sql"
+        android:title="@string/sql">
+    </item>
+    <item
+        android:id="@+id/intentservice"
+        android:title="@string/intentservice">
     </item>
 
 </menu>

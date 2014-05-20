@@ -43,13 +43,13 @@ public class IntentServiceMain extends Activity {
 		Intent service = new Intent(this, ServiceMain.class);
 		
 		switch (item.getItemId()) {
-		case R.id.list:
+		case R.id.listarray:
 			startActivity(mainIntent);
 			return true;
 		case R.id.sql:
 			startActivity(sqlIntent);
 			return true;
-		case R.id.list2:
+		case R.id.service:
 			startActivity(service);
 			return true;
 		
