@@ -31,6 +31,8 @@ public class IntentServiceMain extends Activity {
 						"Please enter seconds to stop service", Toast.LENGTH_SHORT).show();
 			}
 			else {
+				Toast.makeText(getApplicationContext(),
+						"Starting service", Toast.LENGTH_SHORT).show();
 				// Get sleep time from edit text then make string then parse into long
 				long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
 				// Create Intent
