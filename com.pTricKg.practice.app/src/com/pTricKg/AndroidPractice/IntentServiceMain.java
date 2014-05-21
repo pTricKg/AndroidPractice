@@ -24,19 +24,23 @@ public class IntentServiceMain extends Activity {
 		
 		//Creating string for empty edit text check
 		String checkInput = sleepTime.getText().toString();
-		
-		// checking input
-		if (checkInput.trim().equals("")) {
+		try {
+			// checking input
+			if (checkInput.trim().equals("")) {
+				Toast.makeText(getApplicationContext(),
+						"Please enter seconds to stop service", Toast.LENGTH_SHORT).show();
+			}
+			else {
+				// Get sleep time from edit text then make string then parse into long
+				long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
+				// Create Intent
+				Intent intent = new Intent(IntentServiceMain.this, Sleeper.class);
+				intent.putExtra("seconds", secondsToSleep);
+				startService(intent);
+			}
+		}catch (NumberFormatException e) {
 			Toast.makeText(getApplicationContext(),
-					"Please enter seconds to stop service", Toast.LENGTH_SHORT).show();
-		}
-		else {
-			// Get sleep time from edit text then make string then parse into long
-			long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
-			// Create Intent
-			Intent intent = new Intent(IntentServiceMain.this, Sleeper.class);
-			intent.putExtra("seconds", secondsToSleep);
-			startService(intent);
+					"Please enter only one integer", Toast.LENGTH_SHORT).show();
 		}
 		
 	}
