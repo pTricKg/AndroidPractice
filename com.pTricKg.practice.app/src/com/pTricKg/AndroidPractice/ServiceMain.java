@@ -30,28 +30,33 @@ public class ServiceMain extends Activity {
 
 		String checkText = numbersText.getText().toString();
 		
-		// checking if input was made
-		if (checkText.trim().equals("")) {
-			Toast.makeText(getApplicationContext(),
-					"Please enter some integers..", Toast.LENGTH_SHORT).show();
-		} else {
-			
-			// Set-up string array to collect input from user
-			String[] strNumbers = numbersText.getText().toString().split(" ");
-			
-			// Set-up integer array
-			int[] numbers = new int[strNumbers.length];
-			// setting loop to check numbers
-			// must initialize int i with 0
-			for (int i = 0; i < strNumbers.length; i++) {
-				numbers[i] = Integer.parseInt(strNumbers[i]);
+		try {
+			// checking if input was made
+			if (checkText.trim().equals("")) {
+				Toast.makeText(getApplicationContext(),
+						"Please enter some integers..", Toast.LENGTH_SHORT).show();
+			} else {
+				
+				// Set-up string array to collect input from user
+				String[] strNumbers = numbersText.getText().toString().split(" ");
+				
+				// Set-up integer array
+				int[] numbers = new int[strNumbers.length];
+				// setting loop to check numbers
+				// must initialize int i with 0
+				for (int i = 0; i < strNumbers.length; i++) {
+					numbers[i] = Integer.parseInt(strNumbers[i]);
+				}
+	
+				averagingIntent = new Intent(ServiceMain.this, SimpleService.class);
+				averagingIntent.putExtra("numbers", numbers);
+	
+				startService(averagingIntent);
+	
 			}
-
-			averagingIntent = new Intent(ServiceMain.this, SimpleService.class);
-			averagingIntent.putExtra("numbers", numbers);
-
-			startService(averagingIntent);
-
+		}catch (NumberFormatException e) {
+			Toast.makeText(getApplicationContext(),
+					"Please enter integers only", Toast.LENGTH_SHORT).show();
 		}
 
 	}
