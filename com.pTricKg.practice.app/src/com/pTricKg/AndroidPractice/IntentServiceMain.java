@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class IntentServiceMain extends Activity {
 
@@ -20,12 +21,24 @@ public class IntentServiceMain extends Activity {
 	public void  startService (View v) {
 		// find EditText
 		EditText sleepTime = (EditText) findViewById(R.id.editSleep);
-		// Get sleep time from edit text then make string then parse into long
-		long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
-		// Create Intent
-		Intent intent = new Intent(IntentServiceMain.this, Sleeper.class);
-		intent.putExtra("seconds", secondsToSleep);
-		startService(intent);
+		
+		//Creating string for empty edit text check
+		String checkInput = sleepTime.getText().toString();
+		
+		// checking input
+		if (checkInput.trim().equals("")) {
+			Toast.makeText(getApplicationContext(),
+					"Please enter seconds to stop service", Toast.LENGTH_SHORT).show();
+		}
+		else {
+			// Get sleep time from edit text then make string then parse into long
+			long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
+			// Create Intent
+			Intent intent = new Intent(IntentServiceMain.this, Sleeper.class);
+			intent.putExtra("seconds", secondsToSleep);
+			startService(intent);
+		}
+		
 	}
 	
 	@Override
