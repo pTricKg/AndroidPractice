@@ -79,7 +79,10 @@ public class ListSQL extends Activity {
 			return true;
 		case R.id.intentservice:
 			startActivity(intentService);
-			return true;
+			return true;case R.id.quit:
+				finish();
+				return true;
+		
 
 		}
 		return false;

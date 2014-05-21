@@ -69,6 +69,9 @@ public class IntentServiceMain extends Activity {
 		case R.id.service:
 			startActivity(service);
 			return true;
+		case R.id.quit:
+			finish();
+			return true;
 		
 
 		}

@@ -72,6 +72,9 @@ public class ListMain extends ListActivity {
 			case R.id.intentservice:
 				startActivity(intentService);
 				return true;
+			case R.id.quit:
+				finish();
+				return true;
 
 			}
 			return false;

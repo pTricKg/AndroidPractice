@@ -21,5 +21,6 @@
     <string name="editText">Enter some integers separated by space</string>
     <string name="editsleep">Push to Sleep</string>
     <string name="editSleep">Time to sleep service in seconds</string>
+    <string name="quit">Quit</string>
 
 </resources>
