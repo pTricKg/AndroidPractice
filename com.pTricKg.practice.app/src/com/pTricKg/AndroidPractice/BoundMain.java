@@ -78,6 +78,8 @@ public class BoundMain extends Activity {
     public void onAddClick(View view) {
     	if (isBound) {
     		Log.i("bound", String.format("Sum: %d", bService.add(32, 12) ));
+    		int addNm = bService.add(32, 12);
+    		Toast.makeText(this, String.format("Sum: %d", addNm), Toast.LENGTH_LONG).show();
     	}
     	
     }
