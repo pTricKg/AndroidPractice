@@ -14,4 +14,13 @@
         android:text="@string/boundBtn"
         android:onClick="onBtnClick" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onAddClick"
+        android:text="@string/boundBtn" />
+
 </RelativeLayout>

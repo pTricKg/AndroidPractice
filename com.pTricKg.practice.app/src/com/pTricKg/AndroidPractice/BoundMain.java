@@ -9,6 +9,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -70,6 +71,13 @@ public class BoundMain extends Activity {
     	if (isBound) {
     		//pop a toast with the result of the current answer:
     		Toast.makeText(this, bService.getAnswer(), Toast.LENGTH_LONG).show();
+    	}
+    	
+    }
+    
+    public void onAddClick(View view) {
+    	if (isBound) {
+    		Log.i("bound", String.format("Sum: %d", bService.add(32, 12) ));
     	}
     	
     }
