@@ -14,6 +14,10 @@
         android:title="@string/intentservice">
     </item>
     <item
+        android:id="@+id/binderservice"
+        android:title="@string/binderservice">
+    </item>
+    <item
         android:id="@+id/quit"
         android:title="@string/quit">
     </item>

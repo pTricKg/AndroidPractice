@@ -96,6 +96,9 @@ public class ServiceMain extends Activity {
 		case R.id.intentservice:
 			startActivity(sleep);
 			return true;
+		case R.id.intentservice:
+			startActivity(sleep);
+			return true;
 		case R.id.quit:
 			finish();
 			return true;
