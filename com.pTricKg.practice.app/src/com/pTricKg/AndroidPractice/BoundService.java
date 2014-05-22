@@ -1,6 +1,7 @@
 package com.pTricKg.AndroidPractice;
 
 import java.util.Random;
+import java.util.Timer;
 
 import android.app.Service;
 import android.content.Intent;
@@ -59,5 +60,11 @@ public class BoundService extends Service {
 		int msgIndex = randomGenerator.nextInt(20);
 		return answer[msgIndex];
 	}
+	// Not using yet
+//	public Timer setTimer() {
+//		
+//		return null;
+//		
+//	}
 
 }
