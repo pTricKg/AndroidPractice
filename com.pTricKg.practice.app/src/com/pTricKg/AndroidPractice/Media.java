@@ -9,8 +9,9 @@ import android.view.View;
 
 public class Media extends Activity {
 	
-	MediaPlayer sTrekOpen = null;
-	MediaPlayer sTrekClose = null;
+//	MediaPlayer sTrekOpen = null;
+//	MediaPlayer sTrekClose = null;
+	MediaPlayer mediaSTrek = null;
 	MediaPlayer local_mp = null;
 	
 	public void onCreate(Bundle savedInstanceState) {
@@ -20,33 +21,54 @@ public class Media extends Activity {
 	
 	public void onStop() {
 		// check if media present
+//		super.onStop();
+//		if (sTrekOpen != null) {
+//			sTrekOpen.release();
+//			sTrekOpen = null;
+//		}
+//		if (sTrekClose != null) {
+//			sTrekClose.release();
+//			sTrekClose = null;
+//		}
 		super.onStop();
-		if (sTrekOpen != null) {
-			sTrekOpen.release();
-			sTrekOpen = null;
-		}
-		if (sTrekClose != null) {
-			sTrekClose.release();
-			sTrekClose = null;
+		if (mediaSTrek != null) {
+			mediaSTrek.release();
+			mediaSTrek = null;
 		}
 	}
 	
 	//playing sound from raw folder
 	public void play(View v) {
-		if(sTrekOpen != null) {
-			sTrekOpen.release();
+//		if(sTrekOpen != null) {
+//			sTrekOpen.release();
+//		}
+		if (mediaSTrek != null) {
+			mediaSTrek.release();
 		}
-		switch(v.getId()) {
-		
-		case R.id.btnSTOpen:
-			sTrekOpen = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_open);
-			break;
-		case R.id.btnSTClose:
-			sTrekClose = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_close);
-			break;
-		}
-		sTrekOpen.start();
-		}
+			
+			switch(v.getId()) {
+			
+			case R.id.btnSTOpen:
+				mediaSTrek = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_open);
+				break;
+			case R.id.btnSTClose:
+				mediaSTrek = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_close);
+				break;
+			}
+			mediaSTrek.start();
+	}
+//		switch(v.getId()) {
+//		
+//		case R.id.btnSTOpen:
+//			sTrekOpen = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_open);
+//			break;
+//		case R.id.btnSTClose:
+//			sTrekClose = MediaPlayer.create(getApplicationContext(), R.raw.star_trek_close);
+//			break;
+//		}
+//		sTrekOpen.start();
+//		sTrekClose.start();
+//		}
 	
 	// playing sound form sdCard
 	// not used yet
