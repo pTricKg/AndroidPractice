@@ -84,6 +84,11 @@ public class BoundMain extends Activity {
     	
     }
     
+    public void onClickMedia(View v) {
+    	Intent media = new Intent(this, Media.class);
+    	startActivity(media);
+    }
+    
     @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Set-up intent
