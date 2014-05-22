@@ -60,6 +60,7 @@ public class IntentServiceMain extends Activity {
 		Intent mainIntent = new Intent(this, ListMain.class);
 		Intent sqlIntent = new Intent(this, ListSQL.class);
 		Intent service = new Intent(this, ServiceMain.class);
+		Intent bind = new Intent(this, BoundMain.class);
 		
 		switch (item.getItemId()) {
 		case R.id.listarray:
@@ -70,6 +71,9 @@ public class IntentServiceMain extends Activity {
 			return true;
 		case R.id.service:
 			startActivity(service);
+			return true;
+		case R.id.binderservice:
+			startActivity(bind);
 			return true;
 		case R.id.quit:
 			finish();
