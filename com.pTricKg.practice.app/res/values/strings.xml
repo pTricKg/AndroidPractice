@@ -16,6 +16,7 @@
     <string name="btnStop_text">Stop</string>
     <string name="addBtn">Add</string>
     <string name="askBtn">Get answer</string>
+    <string name="mediaactivity">Go to Media Activity</string>
     <string name="notification">Notification</string>
     <string name="service_main">Service Main</string>
     <string name="intent_service">Intent Service</string>
