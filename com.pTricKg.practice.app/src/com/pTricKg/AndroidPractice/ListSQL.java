@@ -69,6 +69,7 @@ public class ListSQL extends Activity {
 		Intent mainIntent = new Intent(this, ListMain.class);
 		Intent serviceIntent = new Intent(this, ServiceMain.class);
 		Intent intentService = new Intent(this, IntentServiceMain.class);
+		Intent bind = new Intent(this, BoundMain.class);
 		
 		switch (item.getItemId()) {
 		case R.id.listarray:
@@ -79,9 +80,14 @@ public class ListSQL extends Activity {
 			return true;
 		case R.id.intentservice:
 			startActivity(intentService);
-			return true;case R.id.quit:
+			return true;
+		case R.id.binderservice:
+			startActivity(bind);
+			return true;
+		case R.id.quit:
 				finish();
 				return true;
+		
 		
 
 		}
