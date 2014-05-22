@@ -61,6 +61,7 @@ public class ListMain extends ListActivity {
 			Intent sqlIntent = new Intent(this, ListSQL.class);
 			Intent serviceIntent = new Intent(this, ServiceMain.class);
 			Intent intentService = new Intent(this, IntentServiceMain.class);
+			Intent bind = new Intent(this, BoundMain.class);
 			
 			switch (item.getItemId()) {
 			case R.id.sql:
@@ -71,6 +72,9 @@ public class ListMain extends ListActivity {
 				return true;
 			case R.id.intentservice:
 				startActivity(intentService);
+				return true;
+			case R.id.binderservice:
+				startActivity(bind);
 				return true;
 			case R.id.quit:
 				finish();
