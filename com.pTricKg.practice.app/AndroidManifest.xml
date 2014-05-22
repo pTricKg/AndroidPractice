@@ -46,10 +46,20 @@
                 </action>
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.pTricKg.AndroidPractice.BoundMain"
+            android:label="@string/bind_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+            </intent-filter>
+        </activity>
 
         <service android:name="com.pTricKg.AndroidPractice.SimpleService" >
         </service>
         <service android:name="com.pTricKg.AndroidPractice.Sleeper" >
+        </service>
+        <service android:name="com.pTricKg.AndroidPractice.BoundService" >
         </service>
     </application>
 

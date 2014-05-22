@@ -17,6 +17,7 @@
     <string name="notification">Notification</string>
     <string name="service_main">Service Main</string>
     <string name="intent_service">Intent Service</string>
+    <string name="bound_service">Binder Service</string>
     <string name="menuList">List</string>
     <string name="menuService">Service</string>
     <string name="editText">Enter some integers separated by space</string>
