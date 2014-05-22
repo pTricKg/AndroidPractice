@@ -14,7 +14,8 @@
     <string name="intentservice">Go to IntentService</string>
     <string name="btnStart_text">Start</string>
     <string name="btnStop_text">Stop</string>
-    <string name="boundBtn">Push</string>
+    <string name="addBtn">Add</string>
+    <string name="askBtn">Get answer</string>
     <string name="notification">Notification</string>
     <string name="service_main">Service Main</string>
     <string name="intent_service">Intent Service</string>
@@ -25,5 +26,6 @@
     <string name="editsleep">Push to Sleep</string>
     <string name="editSleep">Time to sleep service in seconds</string>
     <string name="quit">Quit</string>
+    <string name="textAsk">Ask me, I will tell you your fortune</string>
 
 </resources>
