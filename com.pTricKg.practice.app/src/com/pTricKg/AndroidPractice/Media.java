@@ -49,6 +49,7 @@ public class Media extends Activity {
 		}
 	
 	// playing sound form sdCard
+	// not used yet
 	public void playLocalAudio(View v) {
 		// file to play must reside on SDCard
 		String sdPath = "mnt/sdcard/--";

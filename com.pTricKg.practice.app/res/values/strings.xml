@@ -27,5 +27,7 @@
     <string name="editSleep">Time to sleep service in seconds</string>
     <string name="quit">Quit</string>
     <string name="textAsk">Ask me, I will tell you your fortune</string>
+    <string name="st_open">Play opening Star Trek Media</string>
+    <string name="st_close">Play closing Star Trek Media</string>
 
 </resources>
