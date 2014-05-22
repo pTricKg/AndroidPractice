@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -70,6 +71,38 @@ public class BoundMain extends Activity {
     		//pop a toast with the result of the current answer:
     		Toast.makeText(this, bService.getAnswer(), Toast.LENGTH_LONG).show();
     	}
+    	
     }
+    
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Set-up intent
+		Intent mainIntent = new Intent(this, ListMain.class);
+		Intent sqlIntent = new Intent(this, ListSQL.class);
+		Intent service = new Intent(this, ServiceMain.class);
+		Intent bind = new Intent(this, BoundMain.class);
+		
+		switch (item.getItemId()) {
+		case R.id.listarray:
+			startActivity(mainIntent);
+			return true;
+		case R.id.sql:
+			startActivity(sqlIntent);
+			return true;
+		case R.id.service:
+			startActivity(service);
+			return true;
+		case R.id.binderservice:
+			startActivity(bind);
+			return true;
+		case R.id.quit:
+			finish();
+			return true;
+		
+
+		}
+		return false;
+
+	}
     
 }
