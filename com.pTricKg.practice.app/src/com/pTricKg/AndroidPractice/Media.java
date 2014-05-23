@@ -10,6 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+/*
+ * Here we are simply playing a media file form button click.
+ */
+
 public class Media extends Activity {
 
 	MediaPlayer mediaSTrek = null;

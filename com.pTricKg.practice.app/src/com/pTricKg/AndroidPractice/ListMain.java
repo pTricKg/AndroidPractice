@@ -14,6 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+/*
+ * Here we simply populate a list array from xml and give toast message
+ * when user clicks item.
+ */
+
 public class ListMain extends ListActivity {
 	
 	String[] countries;
