@@ -72,7 +72,8 @@
         </activity>
         <activity
             android:name="com.pTricKg.AndroidPractice.Video"
-            android:label="@string/video" >
+            android:label="@string/video"
+            android:configChanges="screenSize|orientation|keyboardHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
                 </action>
