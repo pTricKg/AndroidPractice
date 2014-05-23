@@ -3,8 +3,11 @@ package com.pTricKg.AndroidPractice;
 import java.io.IOException;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class Media extends Activity {
@@ -62,5 +65,42 @@ public class Media extends Activity {
 		}
 
 	}
+	
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menufive, menu);
+        return true;
+    }
+	 @Override
+		public boolean onOptionsItemSelected(MenuItem item) {
+			// Set-up intent
+			Intent mainIntent = new Intent(this, ListMain.class);
+			Intent sqlIntent = new Intent(this, ListSQL.class);
+			Intent service = new Intent(this, ServiceMain.class);
+			Intent bind = new Intent(this, BoundMain.class);
+			
+			switch (item.getItemId()) {
+			case R.id.listarray:
+				startActivity(mainIntent);
+				return true;
+			case R.id.sql:
+				startActivity(sqlIntent);
+				return true;
+			case R.id.service:
+				startActivity(service);
+				return true;
+			case R.id.binderservice:
+				startActivity(bind);
+				return true;
+			case R.id.quit:
+				finish();
+				return true;
+			
+
+			}
+			return false;
+
+		}
 
 }
