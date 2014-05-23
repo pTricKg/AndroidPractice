@@ -63,7 +63,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.AnotherService"
+            android:name="com.pTricKg.AndroidPractice.AnotherServiceMain"
             android:label="@string/anotherService" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
