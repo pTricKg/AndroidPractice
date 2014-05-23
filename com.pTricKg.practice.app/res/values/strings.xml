@@ -7,29 +7,39 @@
     <string name="areaLabel">Area:</string>
     <string name="space"></string>
     <string name="areaDescriptor">sq. miles</string>
+    <string name="notification">Notification</string>
+
+    <!-- Menu -->
     <string name="sql">Go to List using SQL</string>
     <string name="listarray">Go to list using array</string>
     <string name="service">Go to Service</string>
     <string name="binderservice">Go to Binder Service</string>
     <string name="intentservice">Go to IntentService</string>
     <string name="media">Go to Media</string>
+    <string name="quit">Quit</string>
+
+    <!-- Buttons -->
     <string name="btnStart_text">Start</string>
     <string name="btnStop_text">Stop</string>
     <string name="addBtn">Add</string>
     <string name="askBtn">Get answer</string>
     <string name="mediaactivity">Go to Media Activity</string>
-    <string name="notification">Notification</string>
+    <string name="editsleep">Push to Sleep</string>
+     <string name="st_open">Play opening Star Trek Media</string>
+    <string name="st_close">Play closing Star Trek Media</string>
+
+    <!-- Headers -->
     <string name="service_main">Service Main</string>
     <string name="intent_service">Intent Service</string>
     <string name="bound_service">Binder Service</string>
     <string name="menuList">List</string>
     <string name="menuService">Service</string>
+    <string name="mediaService">Media</string>
+
+    <!-- EditText Fields -->
     <string name="editText">Enter some integers separated by space</string>
-    <string name="editsleep">Push to Sleep</string>
     <string name="editSleep">Time to sleep service in seconds</string>
-    <string name="quit">Quit</string>
     <string name="textAsk">Ask me, I will tell you your fortune</string>
-    <string name="st_open">Play opening Star Trek Media</string>
-    <string name="st_close">Play closing Star Trek Media</string>
+   
 
 </resources>
