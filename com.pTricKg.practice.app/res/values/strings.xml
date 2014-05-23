@@ -27,6 +27,7 @@
     <string name="editsleep">Push to Sleep</string>
      <string name="st_open">Play opening Star Trek Media</string>
     <string name="st_close">Play closing Star Trek Media</string>
+    
 
     <!-- Headers -->
     <string name="service_main">Service Main</string>
@@ -35,6 +36,7 @@
     <string name="menuList">List</string>
     <string name="menuService">Service</string>
     <string name="mediaService">Media</string>
+    <string name="anotherService">Another Service</string>
 
     <!-- EditText Fields -->
     <string name="editText">Enter some integers separated by space</string>

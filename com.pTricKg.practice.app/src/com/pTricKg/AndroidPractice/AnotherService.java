@@ -17,11 +17,11 @@ import android.widget.Toast;
 public class AnotherService extends Service {
 
 	// Set-up variables
-	// private NotificationManager manager;
-	// private Timer counter = new Timer();
-	// private long seconds = 0L;
-	// private TimerTask clockTask = null;
-	// private PendingIntent notificationIntent = null;
+	private NotificationManager manager;
+	private Timer counter = new Timer();
+	private long seconds = 0L;
+	private TimerTask clockTask = null;
+	private PendingIntent notificationIntent = null;
 
 	// Set-up IBinder but not used yet
 	@Override
@@ -33,74 +33,50 @@ public class AnotherService extends Service {
 	// Getting service created and started
 	public void onCreate() {
 		super.onCreate();
-		// manager =
-		// (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-		// displayNotification("Service Started");
-		// clockTask = new TimerTask() {
-		// public void run() {
-		// seconds++;
-		// }
-		// };
-		// startCounter();
-	}
-
-	// int created for array and starts service
-	public int onStartCommand(Intent intent, int flags, int startID) {
-		Log.e("onStartCommand", "onStartCommand started");
-
-		int[] numArray = intent.getExtras().getIntArray("numbers");
-		float avg = findAverage(numArray);
-
-		Toast.makeText(getApplicationContext(),
-				String.format("Average %f", avg), Toast.LENGTH_SHORT).show();
-		return startID;
+		manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+		displayNotification("Service Started");
+		clockTask = new TimerTask() {
+			public void run() {
+				seconds++;
+			}
+		};
+		startCounter();
 	}
 
 	// Must explicitly destroy service
 	public void onDestroy() {
 		super.onDestroy();
-		Toast.makeText(getApplicationContext(), "Service stopped.",
-				Toast.LENGTH_SHORT).show();
-		// stopCounter();
-		// manager.cancel(R.string.notification);
-		// displayNotification(String.format("Service stopped after %d seconds.",
-		// seconds));
-		// seconds = 0L;
-	}
 
-	// loops through number array to find average
-	float findAverage(int[] nums) {
-		int sum = 0;
-		for (int i = 0; i < nums.length; i++) {
-			sum += nums[i];
-		}
-		return (float) sum / nums.length;
+		stopCounter();
+		manager.cancel(R.string.notification);
+		displayNotification(String.format("Service stopped after %d seconds.",
+				seconds));
+		seconds = 0L;
 	}
 
 	// Creating notification for Service state
-	// @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-	// private void displayNotification(CharSequence text) {
-	// Notification notification = new Notification.Builder(this)
-	// .setTicker(text)
-	// .setContentTitle(text)
-	// .setContentIntent(notificationIntent)
-	// .setSmallIcon(R.drawable.ic_launcher)
-	// .build();
-	//
-	// manager.notify(R.string.notification, notification);
-	// }
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+	private void displayNotification(CharSequence text) {
+		Notification notification = new Notification.Builder(this)
+				.setTicker(text).setContentTitle(text)
+				.setContentIntent(notificationIntent)
+				.setSmallIcon(R.drawable.ic_launcher).build();
+
+		manager.notify(R.string.notification, notification);
+	}
+
 	//
 	// // Self explained
-	// private void startCounter() {
-	// //set up a timer to increment seconds once per second (1000
-	// milliseconds):
-	// counter.scheduleAtFixedRate(clockTask, 0, 1000L);
-	// }
-	//
-	// private void stopCounter() {
-	// if (counter != null) {
-	// counter.cancel();
-	// }
-	// }
+	private void startCounter() {
+	 //set up a timer to increment seconds once per second (1000
+	 //milliseconds):
+	 counter.scheduleAtFixedRate(clockTask, 0, 1000L);
+	 }
+
+	private void stopCounter() {
+		if (counter != null) {
+			counter.cancel();
+		}
+	}
 
 }
