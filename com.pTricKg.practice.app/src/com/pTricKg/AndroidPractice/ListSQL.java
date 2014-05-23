@@ -14,6 +14,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
+/*
+ * This activity uses CountryDB service. It simply displays list populated from
+ * SQLite database.
+ */
+
 public class ListSQL extends Activity {
 
 	private CountryDB countryDatabase = null;
