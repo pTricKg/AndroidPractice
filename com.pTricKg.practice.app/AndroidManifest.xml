@@ -56,7 +56,7 @@
         </activity>
         <activity
             android:name="com.pTricKg.AndroidPractice.Media"
-            android:label="@string/bound_service" >
+            android:label="@string/mediaService" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
                 </action>
