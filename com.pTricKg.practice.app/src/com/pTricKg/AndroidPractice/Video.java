@@ -25,7 +25,7 @@ public class Video extends Activity {
 		//set controller to play video view
 		vView.setMediaController(vCont);
 		//set path to video
-		vView.setVideoPath("mnt/sdcard/data_asks_spock.mp4");  
+		vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4");  
 		vView.requestFocus();
 		vCont.show();
 		vView.start();
