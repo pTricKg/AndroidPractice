@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
+        android:id="@+id/listarray"
+        android:title="@string/listarray">
+    </item>
+    <item
         android:id="@+id/sql"
         android:title="@string/sql">
     </item>

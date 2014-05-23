@@ -75,7 +75,7 @@ public class ServiceMain extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		getMenuInflater().inflate(R.menu.menuthree, menu);
+		getMenuInflater().inflate(R.menu.menu, menu);
 		return true;
 	}
 

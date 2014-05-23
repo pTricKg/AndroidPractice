@@ -50,7 +50,7 @@ public class IntentServiceMain extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		getMenuInflater().inflate(R.menu.menufour, menu);
+		getMenuInflater().inflate(R.menu.menu, menu);
 		return true;
 	}
 
