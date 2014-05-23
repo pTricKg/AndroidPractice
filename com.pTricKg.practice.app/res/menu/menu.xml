@@ -26,6 +26,10 @@
         android:title="@string/media">
     </item>
     <item
+        android:id="@+id/anotherservice"
+        android:title="@string/anotherService">
+    </item>
+    <item
         android:id="@+id/quit"
         android:title="@string/quit">
     </item>

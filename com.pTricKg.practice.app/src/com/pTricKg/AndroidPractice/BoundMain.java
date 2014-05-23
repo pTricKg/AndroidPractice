@@ -97,6 +97,7 @@ public class BoundMain extends Activity {
 		Intent service = new Intent(this, ServiceMain.class);
 		Intent bind = new Intent(this, BoundMain.class);
 		Intent media = new Intent(this, Media.class);
+		Intent anotherService = new Intent(this, AnotherServiceMain.class);
 		
 		switch (item.getItemId()) {
 		case R.id.listarray:
@@ -113,6 +114,9 @@ public class BoundMain extends Activity {
 			return true;
 		case R.id.media:
 			startActivity(media);
+			return true;
+		case R.id.anotherservice:
+			startActivity(anotherService);
 			return true;
 		case R.id.quit:
 			finish();
