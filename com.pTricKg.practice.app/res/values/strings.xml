@@ -16,6 +16,7 @@
     <string name="binderservice">Go to Binder Service</string>
     <string name="intentservice">Go to IntentService</string>
     <string name="media">Go to Media</string>
+    <string name="videoview">Go to Video</string>
     <string name="quit">Quit</string>
 
     <!-- Buttons -->
@@ -37,6 +38,7 @@
     <string name="menuService">Service</string>
     <string name="mediaService">Media</string>
     <string name="anotherService">Another Service</string>
+    <string name="video">Video</string>
 
     <!-- EditText Fields -->
     <string name="editText">Enter some integers separated by space</string>

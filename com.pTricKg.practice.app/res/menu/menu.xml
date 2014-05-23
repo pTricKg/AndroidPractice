@@ -30,6 +30,10 @@
         android:title="@string/anotherService">
     </item>
     <item
+        android:id="@+id/video"
+        android:title="@string/videoview">
+    </item>
+    <item
         android:id="@+id/quit"
         android:title="@string/quit">
     </item>

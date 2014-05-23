@@ -8,8 +8,10 @@ import android.widget.VideoView;
 public class Video extends Activity {
 	
 	//Initialize variable for video view
+	//VideoView displays while MediaController plays
 	VideoView vView = null;
 	MediaController vCont = null;
+	
 	
 	
 	public void onCreate(Bundle savedInstanceState) {
@@ -23,12 +25,11 @@ public class Video extends Activity {
 		//set controller to play video view
 		vView.setMediaController(vCont);
 		//set path to video
-		vView.setVideoPath("https://www.youtube.com/watch?v=QQnwMXWgksQ");
+		vView.setVideoPath("mnt/sdcard/data_asks_spock.mp4");  
 		vView.requestFocus();
 		vCont.show();
 		vView.start();
-		
-		
+				
 		
 	}
 

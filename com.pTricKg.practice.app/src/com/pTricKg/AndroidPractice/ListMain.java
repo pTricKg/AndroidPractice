@@ -68,6 +68,7 @@ public class ListMain extends ListActivity {
 			Intent intentService = new Intent(this, IntentServiceMain.class);
 			Intent bind = new Intent(this, BoundMain.class);
 			Intent media = new Intent(this, Media.class);
+			Intent video = new Intent(this, Video.class);
 			
 			switch (item.getItemId()) {
 			case R.id.sql:
@@ -84,6 +85,9 @@ public class ListMain extends ListActivity {
 				return true;
 			case R.id.media:
 				startActivity(media);
+				return true;
+			case R.id.video:
+				startActivity(video);
 				return true;
 			case R.id.quit:
 				finish();
