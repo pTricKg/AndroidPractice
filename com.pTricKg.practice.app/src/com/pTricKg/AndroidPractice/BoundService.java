@@ -1,7 +1,6 @@
 package com.pTricKg.AndroidPractice;
 
 import java.util.Random;
-import java.util.Timer;
 
 import android.app.Service;
 import android.content.Intent;
