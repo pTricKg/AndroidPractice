@@ -12,6 +12,7 @@
     <string name="service">Go to Service</string>
     <string name="binderservice">Go to Binder Service</string>
     <string name="intentservice">Go to IntentService</string>
+    <string name="media">Go to Media</string>
     <string name="btnStart_text">Start</string>
     <string name="btnStop_text">Stop</string>
     <string name="addBtn">Add</string>

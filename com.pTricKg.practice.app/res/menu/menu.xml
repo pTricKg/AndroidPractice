@@ -18,6 +18,10 @@
         android:title="@string/binderservice">
     </item>
     <item
+        android:id="@+id/media"
+        android:title="@string/media">
+    </item>
+    <item
         android:id="@+id/quit"
         android:title="@string/quit">
     </item>

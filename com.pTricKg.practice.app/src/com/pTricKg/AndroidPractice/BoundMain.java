@@ -49,7 +49,7 @@ public class BoundMain extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menufive, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
     // Binding to service
@@ -96,6 +96,7 @@ public class BoundMain extends Activity {
 		Intent sqlIntent = new Intent(this, ListSQL.class);
 		Intent service = new Intent(this, ServiceMain.class);
 		Intent bind = new Intent(this, BoundMain.class);
+		Intent media = new Intent(this, Media.class);
 		
 		switch (item.getItemId()) {
 		case R.id.listarray:
@@ -109,6 +110,9 @@ public class BoundMain extends Activity {
 			return true;
 		case R.id.binderservice:
 			startActivity(bind);
+			return true;
+		case R.id.media:
+			startActivity(media);
 			return true;
 		case R.id.quit:
 			finish();
