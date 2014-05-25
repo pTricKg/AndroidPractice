@@ -14,6 +14,7 @@ import android.os.IBinder;
 
 /*
  * Simply gives a notification in status bar for service started and service stopped.
+ * Service provider is AnotherService.java.
  */
 
 public class AnotherService extends Service {
