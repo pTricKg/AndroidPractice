@@ -9,6 +9,10 @@ import android.view.MenuItem;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+/*
+ * This activity uses MediaController and VideoView to display video.
+ */
+
 public class Video extends Activity {
 	
 	//Initialize variable for video view
