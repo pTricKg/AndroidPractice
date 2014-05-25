@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 /*
- * Here we are simply playing a media file form button click.
+ * Here we are simply playing a media file from user button click.
  */
 
 public class Media extends Activity {
