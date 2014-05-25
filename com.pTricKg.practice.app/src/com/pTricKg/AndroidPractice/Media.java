@@ -85,7 +85,7 @@ public class Media extends Activity {
 		Intent serviceIntent = new Intent(this, ServiceMain.class);
 		Intent sleep = new Intent(this, IntentServiceMain.class);
 		Intent bind = new Intent(this, BoundMain.class);
-		Intent anotherService = new Intent(this, AnotherService.class);
+		Intent anotherService = new Intent(this, AnotherServiceMain.class);
 		Intent media = new Intent(this, Media.class);
 		Intent video = new Intent(this, Video.class);
 
