@@ -13,7 +13,7 @@ import android.os.Build;
 import android.os.IBinder;
 
 /*
- * Simply give a notification in status bar for service started and service stopped.
+ * Simply gives a notification in status bar for service started and service stopped.
  */
 
 public class AnotherService extends Service {
