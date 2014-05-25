@@ -62,15 +62,20 @@ public class ListMain extends ListActivity {
 		}
 		@Override
 		public boolean onOptionsItemSelected(MenuItem item) {
-			// Set-up intent to open SQL activity
+			// Set-up intent
+			Intent mainIntent = new Intent(this, ListMain.class);
 			Intent sqlIntent = new Intent(this, ListSQL.class);
 			Intent serviceIntent = new Intent(this, ServiceMain.class);
-			Intent intentService = new Intent(this, IntentServiceMain.class);
+			Intent sleep = new Intent(this, IntentServiceMain.class);
 			Intent bind = new Intent(this, BoundMain.class);
+			Intent anotherService = new Intent(this, AnotherService.class);
 			Intent media = new Intent(this, Media.class);
 			Intent video = new Intent(this, Video.class);
-			
+
 			switch (item.getItemId()) {
+			case R.id.listarray:
+				startActivity(mainIntent);
+				return true;
 			case R.id.sql:
 				startActivity(sqlIntent);
 				return true;
@@ -78,10 +83,13 @@ public class ListMain extends ListActivity {
 				startActivity(serviceIntent);
 				return true;
 			case R.id.intentservice:
-				startActivity(intentService);
+				startActivity(sleep);
 				return true;
 			case R.id.binderservice:
 				startActivity(bind);
+				return true;
+			case R.id.anotherservice:
+				startActivity(anotherService);
 				return true;
 			case R.id.media:
 				startActivity(media);
@@ -95,6 +103,7 @@ public class ListMain extends ListActivity {
 
 			}
 			return false;
-			}
+
+		}
 	}
 
