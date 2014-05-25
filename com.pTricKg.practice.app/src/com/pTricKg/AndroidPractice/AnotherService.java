@@ -12,6 +12,10 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.IBinder;
 
+/*
+ * Simply give a notification in status bar for service started and service stopped.
+ */
+
 public class AnotherService extends Service {
 
 	// Set-up variables
@@ -66,10 +70,10 @@ public class AnotherService extends Service {
 	//
 	// // Self explained
 	private void startCounter() {
-	 //set up a timer to increment seconds once per second (1000
-	 //milliseconds):
-	 counter.scheduleAtFixedRate(clockTask, 0, 1000L);
-	 }
+		// set up a timer to increment seconds once per second (1000
+		// milliseconds):
+		counter.scheduleAtFixedRate(clockTask, 0, 1000L);
+	}
 
 	private void stopCounter() {
 		if (counter != null) {
