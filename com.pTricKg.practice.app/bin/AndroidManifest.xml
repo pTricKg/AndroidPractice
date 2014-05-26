@@ -79,6 +79,23 @@
                 </action>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityLoaderActivity"
+            android:label="@string/title_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExplicitlyLoadedActivity"
+            android:label="@string/title_explicit" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+        </activity>
 
         <service android:name="com.pTricKg.AndroidPractice.SimpleService" >
         </service>
