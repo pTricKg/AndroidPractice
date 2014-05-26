@@ -35,6 +35,10 @@
         android:title="@string/videoview">
     </item>
     <item
+        android:id="@+id/intent"
+        android:title="@string/intent">
+    </item>
+    <item
         android:id="@+id/quit"
         android:title="@string/quit">
     </item>

@@ -17,6 +17,7 @@
     <string name="intentservice">Go to IntentService</string>
     <string name="media">Go to Media</string>
     <string name="videoview">Go to Video</string>
+    <string name="intent">Go to Intents</string>
     <string name="quit">Quit</string>
 
     <!-- Buttons -->

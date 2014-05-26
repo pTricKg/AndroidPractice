@@ -66,6 +66,7 @@ public class AnotherServiceMain extends Activity {
 		Intent anotherService = new Intent(this, AnotherServiceMain.class);
 		Intent media = new Intent(this, Media.class);
 		Intent video = new Intent(this, Video.class);
+		Intent intent = new Intent(this, ActivityLoaderActivity.class);
 
 		switch (item.getItemId()) {
 		case R.id.listarray:
@@ -91,6 +92,9 @@ public class AnotherServiceMain extends Activity {
 			return true;
 		case R.id.video:
 			startActivity(video);
+			return true;
+		case R.id.intent:
+			startActivity(intent);
 			return true;
 		case R.id.quit:
 			finish();

@@ -114,8 +114,7 @@ public class ActivityLoaderActivity extends Activity {
 		Intent intent = getIntent();
 
 		String message = intent.getStringExtra("key");
-		mUserTextView.setText("howdy doodee");
-	
+		mUserTextView.setText(message);
 //			}else {
 //				mUserTextView.setText("I did change");
 //			}
