@@ -18,7 +18,7 @@ public class ActivityLoaderActivity extends Activity {
 
 	// For use with app chooser
 	static private final String CHOOSER_TEXT = "Load " + URL + " with:";
-
+	
 	// TextView that displays user-entered text from ExplicitlyLoadedActivity
 	// runs
 	TextView mUserTextView;

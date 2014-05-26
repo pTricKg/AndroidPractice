@@ -14,8 +14,6 @@ public class ExplicitlyLoadedActivity extends Activity {
 
 	static private final String TAG = "Lab-Intents";
 
-	// static final String EXTRA_MESSAGE = "adpaoeffjj";
-
 	EditText mEditText;
 
 	@Override
@@ -50,7 +48,7 @@ public class ExplicitlyLoadedActivity extends Activity {
 		Log.i(TAG, "Entered enterClicked()");
 
 		// TODO - Save user provided input from the EditText field
-		//mEditText.getText().toString();
+		mEditText.getText().toString();
 
 		// TODO - Create a new intent and save the input from the EditText field
 		// as an extra
