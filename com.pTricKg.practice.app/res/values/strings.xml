@@ -26,9 +26,8 @@
     <string name="askBtn">Get answer</string>
     <string name="mediaactivity">Go to Media Activity</string>
     <string name="editsleep">Push to Sleep</string>
-     <string name="st_open">Play opening Star Trek Media</string>
+    <string name="st_open">Play opening Star Trek Media</string>
     <string name="st_close">Play closing Star Trek Media</string>
-    
 
     <!-- Headers -->
     <string name="service_main">Service Main</string>
@@ -44,6 +43,16 @@
     <string name="editText">Enter some integers separated by space</string>
     <string name="editSleep">Time to sleep service in seconds</string>
     <string name="textAsk">Ask me, I will tell you your fortune</string>
-   
+
+    <!-- For new layouts -->
+    <string name="main_message">Press a button:</string>
+    <string name="title_explicit">Explicit Activation</string>
+    <string name="title_main">Activity Loader Activity</string>
+    <string name="explicit_message">You have sent an Explicit Intent!</string>
+    <string name="explicit_activation_button_string">Explicit Activation</string>
+    <string name="implicit_activation_button_string">Implicit Activation</string>
+    <string name="no_text_entered">No Text Entered</string>
+    <string name="enter_string">Enter</string>
+    <string name="enter_text_here_string">Enter Text Here</string>
 
 </resources>
