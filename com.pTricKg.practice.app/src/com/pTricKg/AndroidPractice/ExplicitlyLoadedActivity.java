@@ -54,12 +54,13 @@ public class ExplicitlyLoadedActivity extends Activity {
 		// as an extra
 		Intent editIntent = new Intent(ExplicitlyLoadedActivity.this,
 				ActivityLoaderActivity.class);
+		
 
 		editIntent.putExtra("key", mEditText.getText().toString());
 		
 		// TODO - Set Activity's result with result code RESULT_OK
 		setResult(RESULT_OK);
-		//startActivity(editIntent);
+		
 		// TODO - Finish the Activity
 		finish();
 
