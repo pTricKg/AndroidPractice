@@ -104,26 +104,26 @@ public class ActivityLoaderActivity extends Activity {
 
 		Log.i(TAG, "Entered onActivityResult()");
 
-		// mUserTextView.setText("I am changing");
-
 		// TODO - Process the result only if this method received both a
 		// RESULT_OK result code and a recognized request code
 		// If so, update the Textview showing the user-entered text.
-		 if (requestCode == GET_TEXT_REQUEST_CODE) {
-			 if (resultCode == RESULT_OK) {
-				 //Intent intent = getIntent();
-//				if (data == null) {
-//					return;
-//				}
-				// Instead of creating new intent, I used data and it now works.
+		if (requestCode == GET_TEXT_REQUEST_CODE) {
+			if (resultCode == RESULT_OK) { // So this was checking requestCode
+											// before
+											// obviously, that didnt run code
+											// inside
+				// this code check for data received from other activities
+				// intent
+				// if (data == null) {
+				// return;
+				// }
+				// Instead of creating new intent, I used Intent data and it now works.
+				// Getting data from edittext input from other activity
 				String message = data.getStringExtra("key");
 				mUserTextView.setText(message);
-//			 }else {
-//				 mUserTextView.setText("I did change");
-			 }
-		
-//		 } else {
-//			 mUserTextView.setText("I did change");
-		 }
+
+			}
+
+		}
 	}
 }
