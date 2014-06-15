@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 
 /*
+ * @author pTricKg
+ *
  * This activity uses AnotherService.  This activity simply gives two buttons:
  * one to start the service and one to stop it.  It will display an status bar
  * notification to user giving the time that service was started for.
