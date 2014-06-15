@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /*
+ * @author pTricKg
+ *
  * This activity uses SimpleService.  It asks for user input in EditText field
  * for a string array of integers.  We simply take input and average it and display
  * result in toast message. We also catch problems with try/catch block.
