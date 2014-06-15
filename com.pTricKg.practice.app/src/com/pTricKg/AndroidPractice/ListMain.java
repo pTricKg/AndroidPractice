@@ -15,6 +15,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 /*
+ * @author pTricKg
+ *
  * Here we simply populate a list array from xml and give toast message
  * when user clicks item.
  */
