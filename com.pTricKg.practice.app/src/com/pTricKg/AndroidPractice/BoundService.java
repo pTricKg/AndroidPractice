@@ -7,6 +7,10 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 
+/**
+ * @author pTricKg
+ * @2014
+ */
 public class BoundService extends Service {
 	
 	//we have to publish an IBinder to clients:
