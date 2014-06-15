@@ -6,6 +6,10 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
+/*
+ * @author pTricKg
+*/
+
 public class SimpleService extends Service {
 
 	// Getting service created and started
