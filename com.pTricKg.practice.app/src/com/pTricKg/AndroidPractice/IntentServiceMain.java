@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /*
+ * @author pTricKg
+ *
  * This activity uses Sleeper service.  It asks for user input for how long to sleep in
  * EditText field, then displays toast for how long service was stopped.
  * Intent Services do not have need to call stop() and will run in separate thread.
