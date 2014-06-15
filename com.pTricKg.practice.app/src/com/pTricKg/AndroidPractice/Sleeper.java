@@ -4,6 +4,10 @@ import android.app.IntentService;
 import android.content.Intent;
 import android.widget.Toast;
 
+/*
+ * @author pTricKg
+*/
+
 public class Sleeper extends IntentService {
 	
 	long seconds;
