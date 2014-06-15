@@ -4,6 +4,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/*
+ * @author pTricKg
+*/
+
 public class CountryDB extends SQLiteOpenHelper {
 	
 	// DB version should update at some point if changed
