@@ -13,6 +13,8 @@ import android.os.Build;
 import android.os.IBinder;
 
 /*
+ * @author pTricKg
+ *
  * Simply gives a notification in status bar for service started and service stopped.
  * Service provider is AnotherService.java.
  */
