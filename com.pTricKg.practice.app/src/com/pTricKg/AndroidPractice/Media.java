@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 /*
+ * @author pTricKg
+ *
  * Here we are simply playing a media file from user button click.
  */
 
