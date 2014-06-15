@@ -10,6 +10,8 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 /*
+ * @author pTricKg
+ *
  * This activity uses MediaController and VideoView to display video.
  */
 
