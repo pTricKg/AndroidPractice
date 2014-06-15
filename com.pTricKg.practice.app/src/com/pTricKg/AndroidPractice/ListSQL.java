@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.widget.ListView;
 
 /*
+ * @author pTricKg
+ * 
  * This activity uses CountryDB service. It simply displays list populated from
  * SQLite database.
  */
