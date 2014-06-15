@@ -16,6 +16,8 @@ import android.view.View;
 import android.widget.Toast;
 
 /*
+ * @author pTricKg
+ *
  * This activity uses BoundService.  All that it does is sit connects to the 
  * bound service: gets a randomized answer from list, or add two integers together.
  */
