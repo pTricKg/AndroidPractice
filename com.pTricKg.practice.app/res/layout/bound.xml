@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoundMain" >
+    tools:context=".BoundMain"
+    android:background="#000" >
 
     <Button
         android:id="@+id/button2"
@@ -20,7 +21,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-        android:text="@string/textAsk" />
+        android:text="@string/textAsk"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/button1"
