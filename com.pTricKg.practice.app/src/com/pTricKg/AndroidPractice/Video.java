@@ -11,7 +11,7 @@ import android.widget.VideoView;
 
 /*
  * @author pTricKg
- *
+ * very simple
  * This activity uses MediaController and VideoView to display video.
  */
 
