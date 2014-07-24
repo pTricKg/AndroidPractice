@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.pTricKg.AndroidPractice.ListMain"
+            android:name="com.pTricKg.MultiServices.ListMain"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.ListSQL"
+            android:name="com.pTricKg.MultiServices.ListSQL"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.ServiceMain"
+            android:name="com.pTricKg.MultiServices.ServiceMain"
             android:label="@string/service_main" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.IntentServiceMain"
+            android:name="com.pTricKg.MultiServices.IntentServiceMain"
             android:label="@string/intent_service" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.BoundMain"
+            android:name="com.pTricKg.MultiServices.BoundMain"
             android:label="@string/bound_service" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.Media"
+            android:name="com.pTricKg.MultiServices.Media"
             android:label="@string/mediaService" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -63,7 +63,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.AnotherServiceMain"
+            android:name="com.pTricKg.MultiServices.AnotherServiceMain"
             android:label="@string/anotherService" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >
@@ -71,7 +71,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pTricKg.AndroidPractice.Video"
+            android:name="com.pTricKg.MultiServices.Video"
             android:label="@string/video"
             android:configChanges="screenSize|orientation|keyboardHidden" >
             <intent-filter>
@@ -80,14 +80,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityLoaderActivity"
+            android:name="com.pTricKg.MultiServices.ActivityLoaderActivity"
             android:label="@string/title_main" >
             <intent-filter>
                <category android:name="android.intent.category.VIEW" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".ExplicitlyLoadedActivity"
+            android:name="com.pTricKg.MultiServices.ExplicitlyLoadedActivity"
             android:label="@string/title_explicit" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -95,13 +95,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.pTricKg.AndroidPractice.SimpleService" >
+        <service android:name="com.pTricKg.MultiServices.SimpleService" >
         </service>
-        <service android:name="com.pTricKg.AndroidPractice.Sleeper" >
+        <service android:name="com.pTricKg.MultiServices.Sleeper" >
         </service>
-        <service android:name="com.pTricKg.AndroidPractice.BoundService" >
+        <service android:name="com.pTricKg.MultiServices.BoundService" >
         </service>
-        <service android:name="com.pTricKg.AndroidPractice.AnotherService" >
+        <service android:name="com.pTricKg.MultiServices.AnotherService" >
         </service>
     </application>
 
