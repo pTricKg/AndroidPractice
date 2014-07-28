@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /*
-* @author pTricKg
+* @author pTricKg la de da
 */
 
 public class ActivityLoaderActivity extends Activity {
