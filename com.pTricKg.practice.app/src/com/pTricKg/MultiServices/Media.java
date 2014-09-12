@@ -18,6 +18,7 @@ import android.view.View;
  * Here we are simply playing a media file from user button click.
  *
  * something is borked
+ * i think
  */
 
 public class Media extends Activity {
