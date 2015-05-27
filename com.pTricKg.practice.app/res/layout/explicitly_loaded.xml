@@ -10,7 +10,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/explicit_message"
-        android:textColor="#fff" />
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/editText"
@@ -20,7 +20,8 @@
         android:layout_alignParentTop="true"
         android:clickable="true"
         android:ems="10"
-        android:hint="@string/enter_text_here_string" >
+        android:hint="@string/enter_text_here_string"
+        android:textColor="#ffffff" >
 
         <requestFocus />
     </EditText>
