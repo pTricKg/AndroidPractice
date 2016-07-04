@@ -13,9 +13,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /*
-* @author pTricKg la de da
-* 
-*/
+ * @author pTricKg la de da
+ * 
+ */
 
 public class ActivityLoaderActivity extends Activity {
 
@@ -124,7 +124,8 @@ public class ActivityLoaderActivity extends Activity {
 				// if (data == null) {
 				// return;
 				// }
-				// Instead of creating new intent, I used Intent data and it now works.
+				// Instead of creating new intent, I used Intent data and it now
+				// works.
 				// Getting data from edittext input from other activity
 				String message = data.getStringExtra("key");
 				mUserTextView.setText(message);

@@ -27,36 +27,39 @@ public class IntentServiceMain extends Activity {
 		setContentView(R.layout.intent_service_main);
 
 	}
-	
-	public void  startService (View v) {
+
+	public void startService(View v) {
 		// find EditText
 		EditText sleepTime = (EditText) findViewById(R.id.editSleep);
-		
-		//Creating string for empty edit text check
+
+		// Creating string for empty edit text check
 		String checkInput = sleepTime.getText().toString();
 		try {
 			// checking input
 			if (checkInput.trim().equals("")) {
 				Toast.makeText(getApplicationContext(),
-						"Please enter seconds to stop service", Toast.LENGTH_SHORT).show();
-			}
-			else {
-				Toast.makeText(getApplicationContext(),
-						"Starting service", Toast.LENGTH_SHORT).show();
-				// Get sleep time from edit text then make string then parse into long
-				long secondsToSleep = Long.parseLong(sleepTime.getText().toString());
+						"Please enter seconds to stop service",
+						Toast.LENGTH_SHORT).show();
+			} else {
+				Toast.makeText(getApplicationContext(), "Starting service",
+						Toast.LENGTH_SHORT).show();
+				// Get sleep time from edit text then make string then parse
+				// into long
+				long secondsToSleep = Long.parseLong(sleepTime.getText()
+						.toString());
 				// Create Intent
-				Intent intent = new Intent(IntentServiceMain.this, Sleeper.class);
+				Intent intent = new Intent(IntentServiceMain.this,
+						Sleeper.class);
 				intent.putExtra("seconds", secondsToSleep);
 				startService(intent);
 			}
-		}catch (NumberFormatException e) {
+		} catch (NumberFormatException e) {
 			Toast.makeText(getApplicationContext(),
 					"Please enter only one integer", Toast.LENGTH_SHORT).show();
 		}
-		
+
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
