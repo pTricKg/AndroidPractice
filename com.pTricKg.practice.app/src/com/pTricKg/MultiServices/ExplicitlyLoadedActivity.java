@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 /*
  * @author pTricKg
-*/
+ */
 
 public class ExplicitlyLoadedActivity extends Activity {
 
@@ -57,10 +57,11 @@ public class ExplicitlyLoadedActivity extends Activity {
 		// as an extra
 		Intent editIntent = new Intent();
 		/*
-		 * I could not, for the life of me get the editText to populate the TextView.
-		 * I tried what i though was everything, then, I realized i could add intent 
-		 * from here to setResult().  Still no luck, then i realized maybe I need a blank
-		 * intent to fill with editText.  Walla!!!  It works!!
+		 * I could not, for the life of me get the editText to populate the
+		 * TextView. I tried what i though was everything, then, I realized i
+		 * could add intent from here to setResult(). Still no luck, then i
+		 * realized maybe I need a blank intent to fill with editText. Walla!!!
+		 * It works!!
 		 */
 
 		// TODO - Save user provided input from the EditText field

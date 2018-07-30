@@ -1,6 +1,5 @@
 package com.pTricKg.MultiServices;
 
-
 import com.pTricKg.AndroidPractice.R;
 
 import android.app.Activity;

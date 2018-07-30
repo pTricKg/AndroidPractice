@@ -8,14 +8,14 @@ import android.widget.Toast;
 
 /*
  * @author pTricKg
-*/
+ */
 
 public class SimpleService extends Service {
 
 	// Getting service created and started
 	public void onCreate() {
 		super.onCreate();
-		
+
 	}
 
 	// int created for array and starts service
@@ -35,7 +35,7 @@ public class SimpleService extends Service {
 		super.onDestroy();
 		Toast.makeText(getApplicationContext(), "Service stopped.",
 				Toast.LENGTH_SHORT).show();
-		
+
 	}
 
 	// loops through number array to find average
@@ -52,6 +52,5 @@ public class SimpleService extends Service {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 
 }
